@@ -1,0 +1,20 @@
+{
+  "name": "pactumjs-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js  -f @cucumber/pretty-formatter -f json:output/TestReport_$(timestamp).json",
+    "test:feature":"cucumber_js features/*.feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.7.0",
+    "pactum": "^3.2.3"
+  },
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^1.0.0"
+  }
+}
